@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Center</title>
+    <link rel="stylesheet" href="gym.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <div class="logo-box"></div>
+            <div class="logo-box"></div>
+            <div class="logo-box"></div>
+            <div class="logo-box"></div>
+        </div>
+
+        <div id="NavLeft">
+            <ul>
+                <li><a class="active" href="#Home">Home</a></li>
+                <li><a href="#Program">Program</a></li>
+                <li><a href="#Pricing">Pricing</a></li>
+                <li><a href="#Community">Community</a></li>
+                <li><Button>Login</Button></li>
+                <li><Button>Register Now</Button></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section id="Home"  class="home-section">
+        <div id="HomeMain">
+            <div id="Infodisplay">
+                <h1><span>Helps for your</span><br><strong>ideal body fitness</strong></h1>
+                <p>Motivate user with benefits and positive reinforcement,<br> and offer modifications and progress tracking</p>
+                <button id="startTraining">Start Training</button>
+                <Button id="WatchDemo"> 
+                    <i class="fas fa-play"></i>  Watch Demo</Button>
+            </div>
+            <div id="MainPicture">
+                  <h1 class="vertical-text">Fitness</h1>
+                    <div class="center-image">
+                      <img src="assets/pic1.png" alt="Fitness People" />
+                    </div>
+                  
+                    <div class="customer-info">
+                      <div class="avatars">
+                        <img src="/assets/avatar1.png" alt="Customer 1" />
+                        <img src="/assets/avatar2.png" alt="Customer 2" />
+                        <img src="/assets/avatar3.png" alt="Customer 3" />
+                      </div>
+                      <p>10K+ Satisfied Customers</p>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="Program"  class="Program-section">
+        <div id="Heading">
+            <div id="HeadingLeft">
+                <h1>Program</h1>
+                <h2>Explore our program</h2>
+            </div>   
+            <div id="HeadingRight" >
+                <button class="btn-prev" onclick="move(-1)">❮-</button>
+                <button class="btn-next" onclick="move(1)">-❯</button>
+            </div>  
+        </div>
+        
+        <div class="cards-wrapper">
+            <div class="cards-inner" id="cardsInner">
+                <div class="program-card">
+                    <h2>Cardio Strength</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut venantis nunc a pretium viveraa</p>
+                </div>
+                <div class="program-card">
+                    <h2>Fat Lose</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut venantis nunc a pretium viveraa</p>
+                </div>
+                <div class="program-card">
+                    <h2>Muscle Gain</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut venantis nunc a pretium viveraa</p>
+                </div>
+                <div class="program-card">
+                    <h2>Nutritions</h2>
+                    <p>Lorem ipsum consectetur c venenatis, Ut venantis nunc a pretium viveraa</p>
+                </div>
+            </div>
+        </div>
+        <div class="diplayProgram">
+            <div class="image-group">
+                <img src="/assets/img2.jpg" alt="Top Left" class="img img1">
+                <img src="/assets/img3.webp" alt="Top Right" class="img img2">
+                <img src="/assets/img4.jpg" alt="Bottom Center" class="img img3">
+              </div>
+            <div class="hero-content">
+              <h1>Transform your<br> physique with our <br><span>fitness plan.</span></h1>
+              <ul>
+                <li>💪 Increase Muscle and Strength</li>
+                <li>🍎 Be Healthier than before</li>
+                <li>🔥 Increase Stamina</li>
+              </ul>
+              <div class="buttons">
+                <a href="#" class="btn-primary">Join now</a>
+                <a href="#" class="btn-secondary">Contact us</a>
+              </div>
+            </div>
+        </div>
+            <div class="ProgramFooter">
+                <br>Enhance user experience with healthy nutrition tips,<br>support resources,and social elements</br>
+                <div class="buttons">
+                    <a href="#" class="btn-primary">Join us</a>
+                </div>    
+            </div>
+    </section>
+
+    <section id="Pricing"  class="Pricing-section">
+        <div class="Mainheading">Pricing</div>
+        <div class="SubHeading"><strong> Our List Packages</strong></div>
+
+        <div class="billing-toggle">
+            <button class="active">Billed Montly</button>
+            <button>Billed Yearly</button>
+          </div>
+
+          <div class="cards">
+            <div class="card">
+              <h3>Basic Package</h3>
+              <h2>$25</h2>
+              <p>per month, bill annually</p>
+              <ul>
+                <li>Unlimited Gym Access</li>
+                <li>2x Fitness Consultant</li>
+                <li>Nutrition Tracking</li>
+                <li>1x Free Suplement</li>
+                <li>3 Days per week</li>
+                <li>Personal Trainer</li>
+              </ul>
+              <button>Register Now</button>
+            </div>
+      
+            <div class="card mid">
+              <div class="badge">Best Offer</div>
+              <h3>Mid Package</h3>
+              <h2>$55</h2>
+              <p>per month, bill annually</p>
+              <ul>
+                <li>Unlimited Gym Access</li>
+                <li>4x Fitness Consultant</li>
+                <li>Nutrition Tracking</li>
+                <li>3x Free Suplement</li>
+                <li>5 Days per week</li>
+                <li>Personal Trainer</li>
+              </ul>
+              <button>Register Now</button>
+            </div>
+      
+            <div class="card">
+              <h3>Pro Package</h3>
+              <h2>$75</h2>
+              <p>per month, bill annually</p>
+              <ul>
+                <li>Unlimited Gym Access</li>
+                <li>7x Fitness Consultant</li>
+                <li>Nutrition Tracking</li>
+                <li>5x Free Suplement</li>
+                <li>Gym Card</li>
+                <li>Personal Trainer</li>
+              </ul>
+              <button>Register Now</button>
+            </div>
+      
+            <div class="card">
+              <h3>Athlete Package</h3>
+              <h2>$105</h2>
+              <p>per month, bill annually</p>
+              <ul>
+                <li>Unlimited Gym Access</li>
+                <li>Free Clothes</li>
+                <li>All Training Program</li>
+                <li>Free Fitness Consultant</li>
+                <li>Free Suplement</li>
+                <li>Gym Card</li>
+              </ul>
+              <button>Register Now</button>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <section id="Community"  class="Community-section">
+            <div class="Heading">
+                <h1>stimonial</h1>
+                <h2>What Our Members <br> Say About Us ?</h2>
+            </div> 
+        </div>
+        <div class="content">
+            <div class="avatars">
+                <img src="/assets/avatar1.png" alt="Customer 1" />
+                <img src="/assets/avatar2.png" alt="Customer 2" />
+                <img src="/assets/avatar3.png" alt="Customer 3" />
+                <p style="color: beige;">10K+ Satisfied Customers</p>
+              </div>
+
+              <div class="review-section">
+                <div class="slider-container">
+                    <!-- Review 1 -->
+                    <div class="slide active">
+                        <img src="/assets/avatar2.png" alt="Jonathan" class="avatar">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Join this fitness member, the best choice that I've. They're very professional and give you suggestion about what food and nutrition that you can eat"</p>
+                        <div class="review-author">Jonathan Edward</div>
+                        <div class="author-role">Office Worker</div>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="slide">
+                        <img src="/assets/avatar3.png" alt="Sarah" class="avatar">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="review-text">"Amazing results in just 3 months! The trainers are knowledgeable and the nutrition plan was perfect for my lifestyle."</p>
+                        <div class="review-author">Sarah Johnson</div>
+                        <div class="author-role">Freelance Designer</div>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="slide">
+                        <img src="/assets/avatar1.png" alt="Michael" class="avatar">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Best fitness decision ever! Personalized training and meal plans helped me achieve my goals faster than I expected."</p>
+                        <div class="review-author">Michael Chen</div>
+                        <div class="author-role">Software Developer</div>
+                    </div>
+                </div>
+                
+                <button class="btn btnr-prev">❮</button>
+                <button class="btn btnr-next">❯</button>
+            </div>
+        </div>
+
+        <div class="subscribe-container">
+            <h3 class="subscribe-heading">Subscribe our fitness tips</h3>
+            <p>Clerly communicate the benefits of subscribing ,such as exculsive content <br>and breaking news</p>
+            <form class="subscribe-form">
+                <div class="input-group">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your email address" 
+                        class="email-input"
+                        required
+                    >
+                    <button type="submit" class="subscribe-btn">
+                        Subscribe <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="footer">
+    <div class="footer-context">
+        <div class="Left-fotter">
+            <div class="left-flex">
+            <div id="logo">
+                <div class="logo-box"></div>
+                <div class="logo-box"></div>
+                <div class="logo-box"></div>
+                <div class="logo-box"></div>
+            </div>
+            <p>Gym Center</p>
+            </div>
+            <p class="tagline">
+                Highlight benefits of each <br>
+                exercise, both physical and <br>
+                mental
+              </p>
+        </div>    
+        <div class="footer-right">
+        <div class="footer-column">
+            <h4>Sitemap</h4>
+            <a href="#">About Us</a>
+            <a href="#">Promos</a>
+            <a href="#">News & Blog</a>
+            <a href="#">Help Center</a>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Support</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Support Center</a>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Social Media</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+    </div>
+</div>
+    <div class="footer-bottom">
+        <p class="copyright">&copy; 2023 Fitness Center</p>
+        <div class="legal-links">
+            <a href="#">Terms of Use</a>
+            <span class="separator">-</span>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="gym.js"></script>
+</html>
